@@ -58,7 +58,7 @@ function showData() {
   document.getElementById('addressLabel').innerText = document.getElementsByName('address')[0].value + ' ' + document.getElementsByName('houseNumber')[0].value + document.getElementsByName('zipCode')[0].value;
   document.getElementById('usernameLabel').innerText = document.getElementsByName('username')[0].value;
   document.getElementById('passwordLabel').innerText = document.getElementsByName('password')[0].value;
-  const imgSrc = document.getElementsByName('imageFile')[0].value;
+  let imgSrc = document.getElementsByName('imageFile')[0].value;
   if (imgSrc.includes('C:\\fakepath\\'))
     imgSrc = imgSrc.replace('C:\\fakepath\\', './images/');
   document.getElementById('photoLabel').src = imgSrc;
