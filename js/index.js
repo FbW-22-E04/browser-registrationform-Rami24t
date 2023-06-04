@@ -55,7 +55,7 @@ function showData() {
   document.getElementById('nameLabel').innerText = document.getElementsByName('firstName')[0].value + ' ' + document.getElementsByName('lastName')[0].value;
   document.getElementById('birthDateLabel').innerText = document.getElementsByName('birthDate')[0].value;
   document.getElementById('nationalityLabel').innerText = document.getElementsByName('nationality')[0].value;
-  document.getElementById('addressLabel').innerText = document.getElementsByName('address')[0].value + ' ' + document.getElementsByName('houseNumber')[0].value + document.getElementsByName('zipCode')[0].value;
+  document.getElementById('addressLabel').innerText = document.getElementsByName('address')[0].value + ', ' + document.getElementsByName('houseNumber')[0].value + ', ' + document.getElementsByName('zipCode')[0].value;
   document.getElementById('usernameLabel').innerText = document.getElementsByName('username')[0].value;
   document.getElementById('passwordLabel').innerText = document.getElementsByName('password')[0].value;
   let imgSrc = document.getElementsByName('imageFile')[0].value;
